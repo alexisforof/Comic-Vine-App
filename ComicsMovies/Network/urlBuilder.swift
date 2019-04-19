@@ -16,9 +16,7 @@ class UrlBuilder {
         let isProduction = true
         
         if isProduction {
-            // Url de l'api plus fonctionnel, trop de requête ont était envoyé
-            //return "https://comicvine.gamespot.com"
-            return "https://neopixl.alwaysdata.net/comicvine/movies.json"
+            return "https://comicvine.gamespot.com"
         } else {
             // Optionnel dans notre cas, mais sert à pouvoir dissocier les différents
             // url de production -> l'url par exemple ou les developper travaille différent de l'url client
@@ -28,10 +26,9 @@ class UrlBuilder {
     
     static let urlMovies: String = {
         
-        // La clé d'api à était trop solicité : ban
-        //var apiKey:String = "150072d1adb5619a30df8368149d7b9a48c418d0"
-        //return "\(baseUrl)/api/movies/?api_key=\(apiKey)&format=json"
         
-        return baseUrl
+        var apiKey:String = "Your Api"
+        return "\(baseUrl)/api/movies/?api_key=\(apiKey)&format=json"
+        
     }()
 }
