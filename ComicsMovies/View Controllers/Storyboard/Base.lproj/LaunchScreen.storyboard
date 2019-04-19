@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Comic Vine" translatesAutoresizingMaskIntoConstraints="NO" id="gNG-vk-NjQ">
+                                <rect key="frame" x="22" y="344" width="370" height="208"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MrMotté" translatesAutoresizingMaskIntoConstraints="NO" id="koT-Vf-KAF">
+                                <rect key="frame" x="114" y="574" width="186" height="225"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85202187299999999" green="0.2171579599" blue="0.19211196899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="koT-Vf-KAF" secondAttribute="trailing" constant="114" id="8Ld-Yz-1i1"/>
+                            <constraint firstItem="gNG-vk-NjQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="DQG-BR-5hT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gNG-vk-NjQ" secondAttribute="trailing" constant="22" id="Gjv-B4-6Zq"/>
+                            <constraint firstItem="koT-Vf-KAF" firstAttribute="top" secondItem="gNG-vk-NjQ" secondAttribute="bottom" constant="22" id="OzR-D6-uAd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gNG-vk-NjQ" secondAttribute="bottom" constant="310" id="hHQ-CA-qQi"/>
+                            <constraint firstItem="gNG-vk-NjQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="imu-3S-0EI"/>
+                            <constraint firstItem="koT-Vf-KAF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="tUe-o8-cbU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="koT-Vf-KAF" secondAttribute="bottom" constant="63" id="zed-Jj-WZY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-30.434782608695656" y="373.66071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Comic Vine" width="210" height="119"/>
+        <image name="MrMotté" width="386" height="386"/>
+    </resources>
+</document>
